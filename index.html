@@ -1,14 +1,217 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Co — Specialty Coffee</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">Brew <span>&amp;</span> Co</a>
+      <nav>
+        <ul class="navbar__links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn--outline">Book a Table</a>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Specialty Coffee &amp; Pastries</p>
+      <h1 class="hero__title">Life's Too Short<br>for Bad Coffee</h1>
+      <p class="hero__subtitle">
+        Hand-crafted single-origin espresso drinks, fresh-baked pastries,
+        and a cozy corner in the heart of the city — every single day.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
+        <a href="#about" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__badge">
+      <span>Est.</span>
+      <strong>2018</strong>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="section-eyebrow">What We Serve</p>
+      <h2 class="section-title">Our Menu Highlights</h2>
+      <div class="menu__grid">
+
+        <article class="menu-card">
+          <div class="menu-card__icon">☕</div>
+          <h3 class="menu-card__name">Espresso</h3>
+          <p class="menu-card__desc">Rich, bold, and perfectly pulled from our La Marzocco machine.</p>
+          <span class="menu-card__price">$3.50</span>
+        </article>
+
+        <article class="menu-card menu-card--featured">
+          <div class="menu-card__badge">Popular</div>
+          <div class="menu-card__icon">🥛</div>
+          <h3 class="menu-card__name">Oat Flat White</h3>
+          <p class="menu-card__desc">Velvety oat milk meets a double ristretto for a silky smooth sip.</p>
+          <span class="menu-card__price">$5.50</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__icon">🧋</div>
+          <h3 class="menu-card__name">Cold Brew</h3>
+          <p class="menu-card__desc">Steeped 18 hours, served over ice — naturally sweet &amp; smooth.</p>
+          <span class="menu-card__price">$5.00</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__icon">🥐</div>
+          <h3 class="menu-card__name">Butter Croissant</h3>
+          <p class="menu-card__desc">Freshly baked every morning with 100% French butter. Flaky perfection.</p>
+          <span class="menu-card__price">$4.00</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__icon">🍰</div>
+          <h3 class="menu-card__name">Cheesecake Slice</h3>
+          <p class="menu-card__desc">New-York style, topped with seasonal berry compote.</p>
+          <span class="menu-card__price">$6.50</span>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__icon">🍵</div>
+          <h3 class="menu-card__name">Matcha Latte</h3>
+          <p class="menu-card__desc">Ceremonial-grade matcha whisked with steamed whole milk.</p>
+          <span class="menu-card__price">$5.50</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__visual">
+        <div class="about__img-wrap">
+          <div class="about__img-placeholder"></div>
+        </div>
+        <div class="about__stat-card">
+          <strong>50k+</strong>
+          <span>Cups served yearly</span>
+        </div>
+      </div>
+      <div class="about__copy">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">More Than Just a Coffee Shop</h2>
+        <p>
+          Brew &amp; Co was born out of a simple obsession: finding the perfect cup.
+          We travel to origin farms in Ethiopia, Colombia, and Guatemala to source
+          beans that tell a story — then we roast them in-house every week to make
+          sure you taste them at their peak.
+        </p>
+        <p>
+          Our baristas are trained to SCA standards and genuinely love what they do.
+          Whether you're a seasoned specialty-coffee nerd or you just need a warm cup
+          to start your morning, you'll feel right at home here.
+        </p>
+        <ul class="about__perks">
+          <li>✔ In-house weekly roasting</li>
+          <li>✔ SCA-certified baristas</li>
+          <li>✔ Zero single-use plastics</li>
+          <li>✔ Free Wi-Fi &amp; power outlets</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Visit Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <p class="section-eyebrow">Kind Words</p>
+      <h2 class="section-title">What Our Guests Say</h2>
+      <div class="testimonials__grid">
+
+        <blockquote class="testimonial-card">
+          <p>"Absolutely the best flat white I've had outside Melbourne. The atmosphere is warm and the staff remember
+            your name."</p>
+          <footer>— Andrei M., regular since 2019</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card testimonial-card--highlight">
+          <p>"I work from here every Tuesday. Fast Wi-Fi, excellent cold brew, and nobody rushes you. Perfect co-working
+            spot."</p>
+          <footer>— Diana L., freelance designer</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>"The croissants are dangerously good. I keep telling myself 'just one' and then ordering another."</p>
+          <footer>— Radu T., pastry enthusiast</footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Come Say Hello</h2>
+        <ul class="contact__details">
+          <li>
+            <span class="contact__icon">📍</span>
+            <span>12 Calea Victoriei, Chisinau, MD-2001</span>
+          </li>
+          <li>
+            <span class="contact__icon">🕗</span>
+            <span>Mon – Fri: 7:00 – 20:00<br>Sat – Sun: 8:00 – 21:00</span>
+          </li>
+          <li>
+            <span class="contact__icon">📞</span>
+            <span>+373 22 123 456</span>
+          </li>
+          <li>
+            <span class="contact__icon">✉️</span>
+            <span>hello@brewandco.md</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form" onsubmit="return false;">
+        <h3>Reserve a Spot</h3>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Ion Ionescu" />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="ion@example.com" />
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" />
+        <label for="message">Notes (optional)</label>
+        <textarea id="message" rows="3" placeholder="Allergies, group size, etc."></textarea>
+        <button type="submit" class="btn btn--primary">Send Reservation</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="navbar__logo">Brew <span>&amp;</span> Co</span>
+      <p>© 2026 Brew &amp; Co. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
