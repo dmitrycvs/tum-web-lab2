@@ -1,24 +1,34 @@
-# Lab 2 - Landing page
+# CV Online — Cvasiuc Dmitrii
 
-Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
+Pagină de tip landing page / CV personal, scrisă complet în **HTML + CSS vanilla** (fără framework-uri), disponibilă în limba română.
 
-> For a maximal grade, the website should be for a real client (your/friends/relatives business), otherwise -1-2 points
+## Despre pagină
 
-## Customer requirements
+Site-ul prezintă profilul profesional al lui **Cvasiuc Dmitrii**, student în Ingineria Software la UTM și AI Engineer. Conține 6 secțiuni:
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
+| Secțiune | Conținut |
+|---|---|
+| Hero | Nume, titlu, rezumat scurt, două CTA-uri |
+| Despre mine | Descriere personală |
+| Experiență | Timeline cu experiență academică și personală |
+| Educație | UTM — Ingineria Software, Anul 3 |
+| Competențe | Skills grupate pe categorii (Limbaje, Tooluri, Domenii) |
+| Proiecte | Cards cu link direct pe GitHub |
+| Contact | Secțiune dark cu CTA către GitHub |
 
-## Dev requirements
+**Stack:** HTML5 · CSS3 (custom properties, grid, flexbox, blur) · Inter (Google Fonts)
 
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
+## Screenshots
 
-## Other requirements:
+### Navigare
+![Navbar](assets/navbar.png)
 
-- For potential maximal mark, a WIP version should be submitted during the class
-- Use index.html, reset.css
+### Experiență & Educație
+![Experience section](assets/experience.png)
+
+### Competențe
+![Skills section](assets/skills.png)
+
+## Live demo
+
+https://dmitrycvs.github.io/tum-web-lab2/
