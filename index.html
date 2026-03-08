@@ -1,10 +1,13 @@
 <!doctype html>
-<html>
+<html lang="ro">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CVasiuc Dmitrii - CV Online</title>
+  <title>Cvasiuc Dmitrii — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,7 +15,7 @@
 <body>
   <header class="header">
     <div class="container nav-wrap">
-      <a class="brand" href="#acasa">CVasiuc Dmitrii</a>
+      <a class="brand" href="#acasa">CD.</a>
       <nav>
         <ul class="nav-list">
           <li><a href="#despre">Despre</a></li>
@@ -20,76 +23,114 @@
           <li><a href="#educatie">Educație</a></li>
           <li><a href="#competente">Competențe</a></li>
           <li><a href="#proiecte">Proiecte</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="acasa">
+
     <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">CV online</p>
-        <h1>CVasiuc Dmitrii</h1>
-        <p class="subtitle">AI Engineer, Student la UTM</p>
-        <p class="summary">
-          Student pasionat de inteligență artificială, cu interes pentru produse utile,
-          date și automatizare. Îmi place să construiesc soluții clare, eficiente și
-          ușor de folosit.
-        </p>
-        <a class="cta" href="#contact">Contactează-mă</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-tag">👋 Salut, sunt</p>
+          <h1>Cvasiuc<br>Dmitrii</h1>
+          <p class="subtitle">AI Engineer · Student UTM</p>
+          <p class="summary">
+            Pasionat de inteligență artificială, date și automatizare.
+            Construiesc soluții clare care rezolvă probleme reale.
+          </p>
+          <div class="hero-actions">
+            <a class="cta" href="#proiecte">Vezi proiectele</a>
+            <a class="cta cta--ghost" href="#contact">Contactează-mă</a>
+          </div>
+        </div>
+        <div class="hero-avatar" aria-hidden="true">
+          <span>CD</span>
+        </div>
       </div>
     </section>
 
     <section id="despre" class="section">
       <div class="container">
         <h2>Despre mine</h2>
-        <p>
-          Sunt orientat spre învățare continuă și rezultate practice. Caut oportunități în
-          care pot aplica AI și dezvoltare software pentru a rezolva probleme reale.
-        </p>
+        <div class="about-body">
+          <p>
+            Sunt student în anul 3 la UTM, specializarea Ingineria Software, cu un interes
+            puternic pentru AI și data engineering. Îmi place să transform date brute în
+            informații utile și să construiesc tooluri care chiar funcționează.
+          </p>
+          <p>
+            În afara facultății, lucrez constant la proiecte personale — fie că e vorba de
+            pipelines ETL, modele predictive sau interfețe web simple și clare.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="experienta" class="section alt">
+    <section id="experienta" class="section section--tinted">
       <div class="container">
         <h2>Experiență</h2>
-        <article class="card">
-          <h3>Proiecte academice și personale</h3>
-          <p class="meta">2024 - prezent</p>
-          <p>
-            Lucrez la proiecte de data engineering și machine learning, împreună cu aplicații
-            web. Pun accent pe structurarea datelor, automatizare și rezultate măsurabile.
-          </p>
-        </article>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="tl-date">2024 — prezent</span>
+              <h3>Proiecte academice &amp; personale</h3>
+              <p>
+                Lucrez la proiecte de data engineering și machine learning, cu accent pe
+                structurarea datelor, automatizare și rezultate măsurabile.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="educatie" class="section">
       <div class="container">
         <h2>Educație</h2>
-        <article class="card">
-          <h3>Universitatea Tehnică a Moldovei (UTM)</h3>
-          <p class="meta">Ingineria Software, anul 3</p>
-          <p>Domeniu principal: dezvoltare software, cu interes special pentru AI și data engineering.</p>
-        </article>
+        <div class="edu-card">
+          <div class="edu-logo" aria-hidden="true">UTM</div>
+          <div>
+            <h3>Universitatea Tehnică a Moldovei</h3>
+            <p class="edu-degree">Ingineria Software · Anul 3</p>
+            <p>Cursuri principale: algoritmi, baze de date, rețele, inginerie software, AI.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="competente" class="section alt">
+    <section id="competente" class="section section--tinted">
       <div class="container">
         <h2>Competențe</h2>
-        <ul class="skills">
-          <li>Python</li>
-          <li>Docker</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>Machine Learning</li>
-          <li>Git & GitHub</li>
-          <li>Comunicare și lucru în echipă</li>
-        </ul>
+        <div class="skills-groups">
+          <div class="skill-group">
+            <p class="skill-label">Limbaje</p>
+            <ul class="skills">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Tooluri &amp; Platforme</p>
+            <ul class="skills">
+              <li>Node.js</li>
+              <li>Docker</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Domenii</p>
+            <ul class="skills">
+              <li>Machine Learning</li>
+              <li>Data Engineering</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -97,41 +138,48 @@
       <div class="container">
         <h2>Proiecte</h2>
         <div class="projects">
-          <article class="card">
-            <h3>Weather Spark ETL</h3>
-            <p>
-              Proiect de data engineering pentru colectare și procesare date meteo.
-              <a href="https://github.com/dmitrycvs/weather-spark-etl" target="_blank" rel="noreferrer noopener">Vezi pe
-                GitHub</a>
-            </p>
+          <article class="proj-card">
+            <div class="proj-card__body">
+              <span class="proj-tag">Data Engineering</span>
+              <h3>Weather Spark ETL</h3>
+              <p>Pipeline ETL pentru colectarea și procesarea datelor meteo în timp real, construit cu Apache Spark.</p>
+            </div>
+            <a class="proj-link" href="https://github.com/dmitrycvs/weather-spark-etl" target="_blank"
+              rel="noreferrer noopener">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
           </article>
-          <article class="card">
-            <h3>California Housing Prices</h3>
-            <p>
-              Proiect de predicție a prețurilor locuințelor folosind modele ML.
-              <a href="https://github.com/dmitrycvs/california-housing-prices" target="_blank"
-                rel="noreferrer noopener">Vezi pe GitHub</a>
-            </p>
+          <article class="proj-card">
+            <div class="proj-card__body">
+              <span class="proj-tag">Machine Learning</span>
+              <h3>California Housing Prices</h3>
+              <p>Model de regresie pentru predicția prețurilor locuințelor, cu analiză exploratorie a datelor.</p>
+            </div>
+            <a class="proj-link" href="https://github.com/dmitrycvs/california-housing-prices" target="_blank"
+              rel="noreferrer noopener">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          GitHub:
-          <a href="https://github.com/dmitrycvs" target="_blank" rel="noreferrer noopener">github.com/dmitrycvs</a>
-        </p>
-        <p>Pentru colaborări, scrie-mi pe GitHub.</p>
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+        <h2>Hai să vorbim</h2>
+        <p>Sunt deschis pentru colaborări, stagii sau simplu o discuție despre AI și tech.</p>
+        <a class="cta" href="https://github.com/dmitrycvs" target="_blank" rel="noreferrer noopener">
+          github.com/dmitrycvs ↗
+        </a>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 CVasiuc Dmitrii</p>
+    <div class="container footer-inner">
+      <span class="brand">CD.</span>
+      <p>&copy; 2026 Cvasiuc Dmitrii</p>
     </div>
   </footer>
 </body>
