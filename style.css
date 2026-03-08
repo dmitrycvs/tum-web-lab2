@@ -768,4 +768,9 @@ h2::after {
     body {
         padding-bottom: 68px;
     }
+
+    /* Hide mascot on mobile — sticky CTA bar already covers that area */
+    .mascot {
+        display: none;
+    }
 }
