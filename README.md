@@ -1,19 +1,33 @@
-# Lab 2 - CV personal (RO)
+# CV Online — Cvasiuc Dmitrii
 
-## Descriere
+Pagină de tip landing page / CV personal, scrisă complet în **HTML + CSS vanilla** (fără framework-uri), disponibilă în limba română.
 
-Acest proiect este o pagină de tip landing page în limba română, construită ca un CV online pentru **CVasiuc Dmitrii**.
+## Despre pagină
 
-Conține:
+Site-ul prezintă profilul profesional al lui **Cvasiuc Dmitrii**, student în Ingineria Software la UTM și AI Engineer. Conține 6 secțiuni:
 
-- navigare între secțiuni;
-- call to action în zona hero;
-- minim 4 secțiuni (Despre mine, Experiență, Educație, Competențe, Proiecte, Contact);
-- design simplu și responsive, realizat cu HTML + CSS vanilla.
+| Secțiune | Conținut |
+|---|---|
+| Hero | Nume, titlu, rezumat scurt, două CTA-uri |
+| Despre mine | Descriere personală |
+| Experiență | Timeline cu experiență academică și personală |
+| Educație | UTM — Ingineria Software, Anul 3 |
+| Competențe | Skills grupate pe categorii (Limbaje, Tooluri, Domenii) |
+| Proiecte | Cards cu link direct pe GitHub |
+| Contact | Secțiune dark cu CTA către GitHub |
 
-## Screenshot
+**Stack:** HTML5 · CSS3 (custom properties, grid, flexbox, blur) · Inter (Google Fonts)
 
-![Screenshot CV](assets/screenshot-cv.svg)
+## Screenshots
+
+### Navigare
+![Navbar](assets/navbar.png)
+
+### Experiență & Educație
+![Experience section](assets/experience.png)
+
+### Competențe
+![Skills section](assets/skills.png)
 
 ## Live demo
 
