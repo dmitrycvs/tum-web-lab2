@@ -452,6 +452,26 @@ h2::after {
     color: #64748b;
 }
 
+/* ─── Mobile-only quick facts strip ─────────────────────── */
+.mobile-facts {
+    display: none;
+    background: #1e293b;
+    padding: 0.75rem 0;
+}
+
+.mobile-facts__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.mf-item {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 /* ─── Mobile-only sticky CTA bar (hidden on desktop) ─────── */
 .mobile-cta-bar {
     display: none;
@@ -518,6 +538,11 @@ h2::after {
         display: flex;
     }
 
+    /* Quick facts strip */
+    .mobile-facts {
+        display: block;
+    }
+
     .skills-groups {
         flex-direction: column;
         gap: 1.25rem;
@@ -529,5 +554,10 @@ h2::after {
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    /* Padding so sticky bar doesn't cover footer */
+    body {
+        padding-bottom: 68px;
     }
 }
